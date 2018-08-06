@@ -31,7 +31,7 @@ module.exports = class extends Generator {
         name: 'docker',
         message: 'Your project name on docker hub, such as foo/bar',
         required: false
-      },
+      }
     ];
 
     return this.prompt(prompts).then((props) => {
