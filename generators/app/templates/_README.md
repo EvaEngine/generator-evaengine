@@ -6,6 +6,21 @@
 
 A Skeleton project based on [EvaEngine.js](https://github.com/EvaEngine/EvaEngine.js)
 
+## Get start
+
+First, install [Yeoman](http://yeoman.io) and generator-evaengine using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+
+```bash
+npm install -g yo
+npm install -g generator-evaengine
+```
+
+Then generate your new project:
+
+```bash
+yo evaengine
+```
+
 ## Install and Start develop:
 
 Requirements:

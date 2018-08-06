@@ -6,6 +6,8 @@ A yeoman generator for EvaEngine.js
 
 ## Features
 
+- [EvaEngine.js](https://github.com/EvaEngine/EvaEngine.js) based
+- EvaQueue.js support (optional)
 
 ## Installation
 
@@ -19,12 +21,50 @@ npm install -g generator-evaengine
 Then generate your new project:
 
 ```bash
-yo typelibrary
+yo evaengine
 ```
 
 ## Project Directory Structure
 
 ```
+├── Dockerfile
+├── LICENSE
+├── Makefile
+├── README.md
+├── build
+├── config
+│   ├── config.default.js
+│   ├── config.development.js
+│   ├── config.production.js
+│   └── config.test.js
+├── engine
+├── logs
+├── nodemon.json
+├── package.json
+├── public
+├── src
+│   ├── app.js
+│   ├── cli.js
+│   ├── commands
+│   │   └── hello_world.js
+│   ├── crontab.js
+│   ├── entities
+│   │   └── index.js
+│   ├── models
+│   │   └── index.js
+│   ├── routes
+│   │   ├── api
+│   │   │   └── hello_world.js
+│   │   └── index.js
+│   └── swagger.js
+├── test
+│   ├── bootstrap.js
+│   └── routes
+│       └── api
+│           └── hello_world.js
+└── views
+    ├── error.pug
+    └── index.pug
 ```
 
 ## License
