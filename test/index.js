@@ -8,7 +8,7 @@ describe('general', () => {
       .run(path.join(__dirname, '../generators/app'), {
         tmpdir: false
       })
-      .withPrompts({ projectName: 'tmp' })
+      .withPrompts({ project: 'tmp' })
       .on('end', () => {
         done();
       });
@@ -16,7 +16,7 @@ describe('general', () => {
 
   it('creates expected files', () => {
     assert.file([
-      'index.js',
+      'src/app.js',
     ]);
   });
 });
