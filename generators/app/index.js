@@ -31,6 +31,13 @@ module.exports = class extends Generator {
         name: 'docker',
         message: 'Your project name on docker hub, such as foo/bar',
         required: false
+      },
+      {
+        name: 'evaqueue',
+        type: 'confirm',
+        message: 'Use EvaQueue in your project?',
+        default: true,
+        required: true
       }
     ];
 
@@ -75,5 +82,9 @@ module.exports = class extends Generator {
       );
       return true;
     });
+
+    if (this.props.evaqueue) {
+      this.composeWith(require.resolve('../evaqueue'));
+    }
   }
 };
