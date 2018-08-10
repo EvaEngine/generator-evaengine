@@ -8,7 +8,10 @@ describe('general', () => {
       .run(path.join(__dirname, '../generators/app'), {
         tmpdir: false
       })
-      .withPrompts({ project: 'tmp' })
+      .withPrompts({
+        project: 'tmp',
+        evaqueue: false,
+      })
       .on('end', () => {
         done();
       });

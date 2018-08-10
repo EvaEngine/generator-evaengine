@@ -39,7 +39,10 @@
     "generator-license": "^5.4.0",
     "mkdirp": "^0.5.1",
     "yeoman-generator": "^3.1.1",
-    "yosay": "^2.0.1"
+    "yosay": "^2.0.1",
+    "evaqueue": "^1.0.0",
+    "node-rdkafka": "^2.3.4",
+    "ali-mns": "^2.6.5"
   },
   "jest": {
     "testEnvironment": "node"
@@ -51,7 +54,8 @@
     "test": "mocha --reporter spec --timeout 3000",
     "lint": "eslint generators/* --ext .js",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "install:evaqueue:mac": "CPPFLAGS=-I/usr/local/opt/openssl/include LDFLAGS=-L/usr/local/opt/openssl/lib npm install"
   },
   "repository": "git@github.com:EvaEngine/generator-evaengine.git",
   "license": "MIT"
